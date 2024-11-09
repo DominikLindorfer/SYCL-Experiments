@@ -23,11 +23,20 @@ To get the environment ready for compiling and running SYCL programs, I followed
 
 ### 2. Set Up VSCode
 
-In Visual Studio Code, select the correct setvars environment by navigating to `...\Intel\oneAPI\setvars.bat`. This script initializes the environment variables required by oneAPI tools:
+In Visual Studio Code, select the correct setvars environment by navigating to the path where you installed the oneAPI toolkit into, e.g. `...\Intel\oneAPI\setvars.bat`. This script initializes the environment variables required by oneAPI tools:
+
+![image](https://github.com/user-attachments/assets/e37283e3-0164-435c-9457-f6e58b2234b0)
+
+which is followed by a success message:
+
+![image](https://github.com/user-attachments/assets/28db2568-e51e-4b6f-b838-1d363f5c0bc5)
+
 
 ### 3. Compilation and Execution
 
-Intel's provided tutorials at [oneAPI-samples](https://github.com/oneapi-src/oneAPI-samples/tree/master) were overly complicated for me, using CMake extensively, which often failed to compile examples directly. Instead, I compiled the programs with these straightforward commands:
+Intel's provided tutorials at [oneAPI-samples](https://github.com/oneapi-src/oneAPI-samples/tree/master) were overly complicated for me, using CMake extensively, which often failed to compile examples. I had also tried this [VSCode extension](https://marketplace.visualstudio.com/items?itemName=intel-corporation.oneapi-extension-pack) without luck. 
+
+Instead, I compiled the programs with these straightforward commands:
 
 ```bash
 cd build
@@ -51,7 +60,7 @@ To run any of the executables, navigate to the `build` directory and execute the
 ./PrefixSum.exe
 ```
 
-The output of `hello_world.cpp` will indicate which device the code is running on (CPU or GPU), along with a "Hello, World!" message:
+The output e.g. of `hello_world.cpp` will indicate which device the code is running on (CPU or GPU), along with a "Hello, World!" message:
 
 ```
 Running on 13th Gen Intel(R) Core(TM) i5-13600K
