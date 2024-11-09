@@ -1,6 +1,6 @@
 # SYCL Programming Setup and Execution
 
-This project demonstrates a minimal setup for SYCL programming using Intel’s oneAPI DPC++ compiler, avoiding the complexity of CMake-based setups provided in Intel's official samples. The `src` directory contains the example programs, and the `build` directory is used for compiling and running them.
+This project demonstrates a minimal setup for SYCL programming using Intel’s oneAPI DPC++ compiler, avoiding the complexity (and error-prone / misconfigured) use of the provided CMake-based setups in [Intel's official samples](https://github.com/oneapi-src/oneAPI-samples/). The `src` directory contains the example programs, and the `build` directory is used for compiling and running them.
 
 ## Project Structure
 
